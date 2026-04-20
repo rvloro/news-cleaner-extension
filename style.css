@@ -1,0 +1,34 @@
+
+/* Masquage immédiat basé sur les patterns courants */
+[class*="comment"],
+[id*="comment"],
+[class*="feedback"],
+[id*="feedback"],
+iframe[src*="comment"],
+iframe[src*="disqus"],
+iframe[src*="facebook.com/plugins/comments"] {
+  display: none !important;
+}
+
+/* Publicité et recommandations */
+.pub,
+.ad-container,
+[data-ad],
+[id*="google_ads"],
+.dfp-slot,
+.dfp__inread,
+[id^="outbrain_"],
+.ob-widget,
+.fig-related,
+.article-related,
+.trc_rbox_container,
+[id^="taboola-"],
+a[href*="mediago.io"],
+[id^="mediago"] {
+  display: none !important;
+}
+
+/* Empêcher le scroll horizontal si des pubs dépassent */
+html, body {
+  overflow-x: hidden !important;
+}
